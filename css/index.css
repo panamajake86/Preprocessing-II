@@ -199,7 +199,7 @@ img {
 header {
   margin: 0 auto;
   width: 60%;
-  border-bottom: 1px dashed gray;
+  border-bottom: 2px dashed #C0C0C0;
   padding-bottom: 1rem;
 }
 header h3 {
@@ -208,7 +208,7 @@ header h3 {
 }
 hr {
   border-top: none;
-  border-bottom: 1px dashed;
+  border-bottom: 2px dashed #C0C0C0;
   width: 1028px;
   margin: 0 auto;
 }
@@ -257,4 +257,24 @@ hr {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick button {
+  width: 20rem;
+  height: 5rem;
+  border: 1px solid ;
+  border-radius: 15px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-color: #2E7DE7;
+  color: white;
+}
+.home .content-pick button:hover {
+  width: 20rem;
+  height: 5rem;
+  border: 1px solid ;
+  border-radius: 15px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-color: white;
+  color: #2E7DE7;
 }

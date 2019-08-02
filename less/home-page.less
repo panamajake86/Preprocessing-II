@@ -1,7 +1,7 @@
 header{
   margin: 0 auto;
   width: 60%;
-  border-bottom: 1px dashed gray;  
+  border-bottom:  2px dashed @navigation-border; 
   padding-bottom: 1rem;
   
   h3{
@@ -12,7 +12,7 @@ header{
 
 hr{
   border-top: none;
-  border-bottom: 1px dashed;
+  border-bottom:  2px dashed @navigation-border;
   width: 1028px;
   margin: 0 auto;
 }
@@ -76,5 +76,14 @@ hr{
       width: 30%;
       margin-bottom: 30px;
     }
+
+    button{
+      .gen-btn(#2E7DE7, white);
+
+    }//button
+
+    button:hover{
+      .gen-btn(white, #2E7DE7);
+    }//buktton:hover
   }
 }// home
