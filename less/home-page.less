@@ -1,11 +1,14 @@
 header{
   margin: 0 auto;
-  width: 60%;
+  max-width: 800px;
   border-bottom:  2px dashed @navigation-border; 
   padding-bottom: 1rem;
+
+  @media @mobile{
+    width: 90%;
+  }
   
-  h3{
-      font-size: 3.2rem;
+  h2{
       margin: 2rem 0;
     }
 }
@@ -13,11 +16,19 @@ header{
 hr{
   border-top: none;
   border-bottom:  2px dashed @navigation-border;
-  width: 1028px;
+  width: 100%;
   margin: 0 auto;
+
+  @media @mobile{
+    width: 100%;
+  }
 }
 
 .home {
+
+  @media @mobile{
+    width: 90%;
+  }
 
   .content-section {
     margin: 30px 0;
@@ -25,16 +36,27 @@ hr{
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+    @media @mobile{
+      display: flex;
+      flex-direction: column;
+    }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile{
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile{
+        width: 100%;
+      }
 
       img {
         border-radius: 10px;
@@ -46,14 +68,26 @@ hr{
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile{
+      flex-direction: column-reverse;
+    }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      
+      @media @mobile{
+        width: 100%;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile{
+        width: 100%;
+      }
     }
   }
 
@@ -61,8 +95,16 @@ hr{
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile{
+      width: 100%;
+    }
+
     img {
       border-radius: 10px;
+
+      @media @mobile{
+        width: 100%;
+      }
     }
   }
 
@@ -72,18 +114,39 @@ hr{
     display: flex;
     justify-content: space-between;
 
+    @media @mobile{
+      width: 75%;
+      display: flex;
+      flex-direction: column;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile{
+        width: 100%;
+        justify-content: center;
+      }
     }
 
     button{
       .gen-btn(#2E7DE7, white);
 
+      @media @mobile{
+        .gen-btn(#2E7DE7, white);
+        width: 100%;
+      }
+
     }//button
 
     button:hover{
       .gen-btn(white, #2E7DE7);
-    }//buktton:hover
+
+      @media @mobile{
+        .gen-btn(white, #2E7DE7);
+        width: 100%;
+      }
+    }//button:hover
   }
 }// home

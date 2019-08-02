@@ -2,15 +2,33 @@
 
 .tops{
     margin: 2rem auto;
-    width: 60%;
+    max-width: 800px;
     display: flex;
     justify-content: space-between;
+
+    @media @mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h1{
+        @media @mobile{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+    }
 
     nav{
         display: flex;
         justify-content: space-around;
         align-items: center;
         width: 45%;
+
+        @media @mobile{
+            width: 100%;
+        }
 
         a{
             text-decoration: none;
